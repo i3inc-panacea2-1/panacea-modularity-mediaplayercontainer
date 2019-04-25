@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Panacea.Core, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Panacea.Core.0.0.1\lib\net462\Panacea.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Panacea.Models, Version=0.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Panacea.Models.0.0.2\lib\net462\Panacea.Models.dll</HintPath>
     </Reference>
@@ -54,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\PanaceaServicesExtensions.cs" />
     <Compile Include="FullscreeenMode.cs" />
     <Compile Include="IMediaTraverser.cs" />
     <Compile Include="MediaRequest.cs" />
