@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Panacea.Modularity.MediaPlayerContainer
 {
-    public interface IMediaPlayerContainer : IMediaPlayer
+    public interface IMediaPlayerContainer : IMediaPlayer, IPlugin
     {
         MediaRequest CurrentRequest { get; }
         object CurrentOwner { get; }
