@@ -1,18 +1,13 @@
 ﻿using Panacea.Modularity.Media;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Controls;
 
 namespace Panacea.Modularity.MediaPlayerContainer
 {
     public class MediaRequest
     {
-        public MediaRequest(Channel channel)
+        public MediaRequest(MediaItem channel)
         {
-            Channel = channel;
+            Media = channel;
             FullscreenMode = FullscreenMode.User;
             ShowVideo = true;
             ShowControls = true;
@@ -23,7 +18,7 @@ namespace Panacea.Modularity.MediaPlayerContainer
 
         public ContentControl MediaPlayerHost { get; set; }
 
-        public Channel Channel { get; set; }
+        public MediaItem Media { get; set; }
         public FullscreenMode FullscreenMode { get; set; }
         public MediaPlayerPosition MediaPlayerPosition { get; set; }
         public float Position { get; set; }
@@ -37,7 +32,7 @@ namespace Panacea.Modularity.MediaPlayerContainer
 
         public MediaRequest Copy()
         {
-            var ret = new MediaRequest(Channel);
+            var ret = new MediaRequest(Media);
             foreach (var prop in this.GetType().GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
             {
                 prop.SetValue(ret, prop.GetValue(this));
