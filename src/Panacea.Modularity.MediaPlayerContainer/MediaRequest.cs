@@ -1,4 +1,5 @@
 ﻿using Panacea.Modularity.Media;
+using System;
 using System.Windows.Controls;
 
 namespace Panacea.Modularity.MediaPlayerContainer
@@ -39,6 +40,8 @@ namespace Panacea.Modularity.MediaPlayerContainer
             }
             return ret;
         }
+
+
     }
 
 

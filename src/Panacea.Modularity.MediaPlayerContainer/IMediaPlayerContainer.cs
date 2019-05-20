@@ -12,6 +12,6 @@ namespace Panacea.Modularity.MediaPlayerContainer
         MediaRequest CurrentRequest { get; }
         object CurrentOwner { get; }
         IMediaPlayerPlugin CurrentMediaPlayer { get; }
-        void Play(MediaRequest request);
+        IMediaResponse Play(MediaRequest request);
     }
 }
