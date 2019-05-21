@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\PanaceaServicesExtensions.cs" />
+    <Compile Include="PanaceaServicesExtensions.cs" />
     <Compile Include="FullscreeenMode.cs" />
     <Compile Include="IMediaTraverser.cs" />
     <Compile Include="MediaRequest.cs" />
@@ -61,6 +61,9 @@
     <PackageReference Include="Panacea.Multilinguality">
       <Version>1.0.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
