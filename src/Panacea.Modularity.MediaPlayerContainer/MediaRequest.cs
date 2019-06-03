@@ -1,4 +1,5 @@
 ﻿using Panacea.Modularity.Media;
+using Panacea.Mvvm;
 using System;
 using System.Windows.Controls;
 
@@ -18,8 +19,8 @@ namespace Panacea.Modularity.MediaPlayerContainer
         }
 
         public ContentControl MediaPlayerHost { get; set; }
-
-        public MediaItem Media { get; set; }
+        public ViewModelBase Host { get; set; }
+        public MediaItem Media { get; }
         public FullscreenMode FullscreenMode { get; set; }
         public MediaPlayerPosition MediaPlayerPosition { get; set; }
         public float Position { get; set; }
@@ -40,12 +41,5 @@ namespace Panacea.Modularity.MediaPlayerContainer
             }
             return ret;
         }
-
-
     }
-
-
-    
-
-   
 }
