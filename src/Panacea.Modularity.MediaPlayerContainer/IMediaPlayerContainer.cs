@@ -13,5 +13,7 @@ namespace Panacea.Modularity.MediaPlayerContainer
         object CurrentOwner { get; }
         IMediaPlayerPlugin CurrentMediaPlayer { get; }
         IMediaResponse Play(MediaRequest request);
+
+        void GoFullscreen();
     }
 }
