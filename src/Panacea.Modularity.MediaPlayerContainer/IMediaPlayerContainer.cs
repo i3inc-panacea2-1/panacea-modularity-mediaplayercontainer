@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace Panacea.Modularity.MediaPlayerContainer
 {
-    public interface IMediaPlayerContainer : IMediaPlayer, IPlugin
+    public interface IMediaPlayerContainer : IPlugin
     {
         MediaRequest CurrentRequest { get; }
         object CurrentOwner { get; }
         IMediaPlayerPlugin CurrentMediaPlayer { get; }
         IMediaResponse Play(MediaRequest request);
-
         void GoFullscreen();
     }
 }
