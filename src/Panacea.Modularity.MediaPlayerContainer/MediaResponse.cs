@@ -34,13 +34,9 @@ namespace Panacea.Modularity.MediaPlayerContainer
         event EventHandler<bool> IsSeekableChanged;
         event EventHandler Ended;
         event EventHandler<float> PositionChanged;
-
-        bool CanPlayChannel(object channel);
-        bool HasMoreChapters();
         void Next();
         void Pause();
         void Play();
-        Task Play(MediaItem channel);
         void Previous();
         void SetSubtitles(bool on);
         void Stop();
